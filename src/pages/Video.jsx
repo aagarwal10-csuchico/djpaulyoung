@@ -19,20 +19,29 @@ export default function Video() {
       {/* Video Section */}
       <section className="section">
         <div className="container">
-          <ScrollReveal>
-            <div className="video-page__embed-wrapper">
-              <div className="video-page__embed">
-                <iframe
-                  src="https://www.youtube.com/embed/Rv289W2tcLI?start=1"
-                  title="DJ Paul Young Video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  className="video-page__iframe"
-                />
-              </div>
-            </div>
-          </ScrollReveal>
-
+          <div className="video-page__grid">
+            {[
+              { id: 'Rv289W2tcLI', title: 'DJ Paul Young Video' },
+              { id: 'd4deYNGelRY', title: 'DJ Paul Young Video 2' },
+              { id: 'vIPr0hdnvGw', title: 'DJ Paul Young Video 3' },
+              { id: 'GHdSoOUaKNQ', title: 'DJ Paul Young Video 4' },
+              { id: 'Hwn_Xgw9Los', title: 'DJ Paul Young Video 5' },
+            ].map(({ id, title }) => (
+              <ScrollReveal key={id}>
+                <div className="video-page__embed-wrapper">
+                  <div className="video-page__embed">
+                    <iframe
+                      src={`https://www.youtube.com/embed/${id}`}
+                      title={title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      className="video-page__iframe"
+                    />
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
         </div>
       </section>
 
