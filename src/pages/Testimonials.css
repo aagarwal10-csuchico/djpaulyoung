@@ -1,0 +1,55 @@
+/* ===== Page Hero ===== */
+.page-hero {
+  background: linear-gradient(135deg, #722F37 0%, #8B5E6B 50%, #C9A0A0 100%);
+  padding: 5rem 0 4rem;
+  text-align: center;
+}
+
+.page-hero h1 {
+  color: var(--color-white);
+  font-weight: 300;
+  margin-bottom: 1.25rem;
+}
+
+.page-hero p {
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 640px;
+  margin: 0 auto 0.75rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* ===== Testimonial Images Masonry ===== */
+.testimonials-page__grid {
+  column-count: 2;
+  column-gap: 1.5rem;
+}
+
+.testimonials-page__grid > * {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-image-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.testimonial-image-card__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: bottom;
+}
+
+@media (min-width: 900px) {
+  .testimonials-page__grid {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 640px) {
+  .testimonials-page__grid {
+    column-count: 1;
+  }
+}

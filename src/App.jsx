@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Planning from './pages/Planning';
 import Music from './pages/Music';
 import Video from './pages/Video';
+import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/planning" element={<Planning />} />
           <Route path="/music" element={<Music />} />
           <Route path="/video" element={<Video />} />
+          <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

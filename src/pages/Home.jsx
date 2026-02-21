@@ -29,8 +29,9 @@ export default function Home() {
       {/* Hero */}
       <section className="hero">
         <div className="hero__overlay" />
-        <div className="hero__content container">
-          <h1 className="hero__title">Your Wedding. Your Music. <em>Guaranteed.</em></h1>
+        <div className="hero__inner container">
+          <div className="hero__content">
+            <h1 className="hero__title">Your Wedding. Your Music. <em>Guaranteed.</em></h1>
           <p className="hero__subtitle">
             Twin Cities DJ with 1,000+ ceremonies and a written music guarantee.
           </p>
@@ -45,6 +46,10 @@ export default function Home() {
           <Link to="/contact" className="btn btn-primary hero__cta">
             Schedule a Video Conference
           </Link>
+          </div>
+          <div className="hero__photo">
+            <img src="/Paul-Young.png" alt="DJ Paul Young" />
+          </div>
         </div>
         <div className="hero__scroll-hint">
           <span />

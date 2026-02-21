@@ -22,20 +22,17 @@ export default function Video() {
           <ScrollReveal>
             <div className="video-page__embed-wrapper">
               <div className="video-page__embed">
-                <div className="video-page__placeholder">
-                  <div className="video-page__play-icon">▶</div>
-                  <p>Video Coming Soon</p>
-                  <span>Wedding highlight reel & crowd engagement examples</span>
-                </div>
+                <iframe
+                  src="https://www.youtube.com/embed/Rv289W2tcLI?start=1"
+                  title="DJ Paul Young Video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="video-page__iframe"
+                />
               </div>
             </div>
           </ScrollReveal>
 
-          <ScrollReveal>
-            <p className="video-page__caption">
-              Optional high-interaction crowd engagement examples available — just ask.
-            </p>
-          </ScrollReveal>
         </div>
       </section>
 
