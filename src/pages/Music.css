@@ -1,0 +1,72 @@
+/* ===== Genre Grid ===== */
+.music__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.genre-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-top: 3px solid transparent;
+  background-image: linear-gradient(var(--color-white), var(--color-white)),
+    linear-gradient(135deg, var(--color-champagne), var(--color-blush));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-top: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.genre-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-champagne), var(--color-blush));
+}
+
+.genre-card__emoji {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.genre-card__name {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--color-burgundy);
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.genre-card__artists {
+  font-size: 0.9rem;
+  color: var(--color-light-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== Footer Note ===== */
+.music__footer-note {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background: var(--color-cream);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-champagne);
+}
+
+.music__footer-note p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--color-body-text);
+}
+
+@media (max-width: 640px) {
+  .music__grid {
+    grid-template-columns: 1fr;
+  }
+}
