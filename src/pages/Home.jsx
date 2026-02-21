@@ -4,10 +4,18 @@ import ScrollReveal from '../components/ScrollReveal';
 import './Home.css';
 
 const credentials = [
-  { icon: <HiOutlineMusicNote />, stat: '1,000+', label: 'Ceremonies Performed' },
-  { icon: <HiOutlineShieldCheck />, stat: 'Written', label: 'Music Guarantee' },
-  { icon: <HiOutlineAcademicCap />, stat: 'UST', label: 'University of St. Thomas Graduate' },
-  { icon: <HiOutlineStar />, stat: 'Featured', label: 'Minnesota Bride Magazine' },
+  { icon: <HiOutlineMusicNote />, stat: '1,000+', label: 'Ceremonies performed' },
+  {
+    icon: <HiOutlineShieldCheck />,
+    stat: 'Guaranteed',
+    label: 'To follow your taste in music',
+  },
+  { icon: <HiOutlineAcademicCap />, stat: '25+', label: 'Years of experience' },
+  {
+    icon: <HiOutlineStar />,
+    stat: 'Name-Booked DJ',
+    label: 'Chosen as the recommended DJ in the Fall/Winter 2002 issue of Minnesota Bride',
+  },
 ];
 
 const testimonials = [

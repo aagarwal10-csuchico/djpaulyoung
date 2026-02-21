@@ -201,8 +201,7 @@
   display: block;
   font-size: 0.85rem;
   color: var(--color-light-text);
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
+  line-height: 1.5;
 }
 
 @media (max-width: 900px) {
